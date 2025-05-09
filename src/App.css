@@ -1,0 +1,282 @@
+/* src/App.css */
+body {
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Marker Felt', sans-serif;
+  background-color: #f0f8ff; /* AliceBlue - light and airy */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scroll from animations */
+}
+
+.App {
+  text-align: center;
+  background-color: #fff0f5; /* LavenderBlush - soft pink */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 800px;
+  border: 5px dashed #ffb6c1; /* LightPink */
+}
+
+/* Header */
+.app-header {
+  background-color: #ff69b4; /* HotPink */
+  color: white;
+  padding: 15px 20px;
+  border-radius: 15px 15px 0 0;
+  margin: -25px -25px 20px -25px; /* Extend to touch dashed border */
+  border-bottom: 5px solid #ff1493; /* DeepPink */
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  text-shadow: 2px 2px #c71585; /* MediumVioletRed */
+}
+
+/* Lesson Selector */
+.lesson-selector {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #add8e6; /* LightBlue */
+  border-radius: 10px;
+  border: 3px solid #87ceeb; /* SkyBlue */
+}
+
+.lesson-selector h2 {
+  color: #000080; /* Navy */
+  margin-top: 0;
+}
+
+.lesson-selector button {
+  background-color: #32cd32; /* LimeGreen */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.lesson-selector button:hover {
+  background-color: #228b22; /* ForestGreen */
+  transform: scale(1.05);
+}
+
+.lesson-selector button.active {
+  background-color: #ffc107; /* Amber */
+  color: #333;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Typing Area */
+.typing-area {
+  background-color: #fffacd; /* LemonChiffon */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border: 3px solid #ffd700; /* Gold */
+}
+
+.instructions {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #e0ffff; /* LightCyan */
+  border-radius: 8px;
+  border-left: 5px solid #00ced1; /* DarkTurquoise */
+}
+
+.text-to-type {
+  font-size: 1.8em;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  white-space: pre-wrap; /* Preserve spaces and line breaks */
+  line-height: 1.6;
+}
+
+.text-to-type span {
+  transition: color 0.2s, background-color 0.2s;
+  padding: 2px 0; /* Slight padding for background highlight */
+}
+
+.text-to-type .current {
+  background-color: #ffff99; /* Light Yellow Highlight */
+  border-radius: 3px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { background-color: #ffcc00; } /* Darker Yellow for blink */
+}
+
+.text-to-type .correct {
+  color: #28a745; /* Green */
+}
+
+.text-to-type .incorrect {
+  color: #dc3545; /* Red */
+  background-color: #f8d7da; /* Light Red Background */
+  text-decoration: underline wavy red;
+  animation: shake 0.3s;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  75% { transform: translateX(3px); }
+}
+
+.hidden-input {
+  opacity: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  z-index: -1; /* Make sure it's not clickable or visible */
+}
+
+.stats {
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #4682b4; /* SteelBlue */
+}
+.stats p { margin: 5px 0; }
+
+.lesson-complete {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #90ee90; /* LightGreen */
+  color: #006400; /* DarkGreen */
+  border-radius: 10px;
+  animation: celebration 0.5s ease-out;
+}
+
+@keyframes celebration {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.lesson-complete button {
+  background-color: #ff8c00; /* DarkOrange */
+}
+.lesson-complete button:hover {
+  background-color: #e67e00;
+}
+
+/* Animated Character */
+.animated-character {
+  margin: 20px auto;
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.animated-character.happy {
+  /* background-image: url('./assets/happy_char.png'); Optional if you have an image */
+  background-color: #98fb98; /* PaleGreen */
+  border-radius: 50%;
+  border: 3px solid #32cd32; /* LimeGreen */
+  animation: bounce 0.5s infinite alternate;
+}
+.animated-character.thinking {
+  background-color: #ffe4b5; /* Moccasin */
+  border-radius: 10px;
+  border: 3px solid #ffdab9; /* PeachPuff */
+}
+.animated-character.oops {
+  /* background-image: url('./assets/try_again_char.png'); */
+  background-color: #ffcccb; /* LightPink */
+  border-radius: 20px;
+  border: 3px solid #ff6347; /* Tomato */
+  transform: rotate(5deg);
+  animation: wobble 0.5s;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0px); }
+  to { transform: translateY(-10px); }
+}
+@keyframes wobble {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+}
+
+
+/* Keyboard Guide */
+.keyboard-guide {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e6e6fa; /* Lavender */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.keyboard-row {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.key {
+  background-color: #f5f5f5; /* WhiteSmoke */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 2px;
+  min-width: 40px; /* Ensure keys have some width */
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0 2px #bbb; /* 3D effect */
+  position: relative;
+  transition: background-color 0.1s, transform 0.1s;
+}
+
+.key:active {
+  background-color: #ddd;
+  transform: translateY(1px);
+  box-shadow: 0 1px #aaa;
+}
+
+.key.highlight {
+  background-color: #ffeb3b; /* Yellow */
+  color: #333;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 2px #bbb, 0 0 0 0 rgba(255, 235, 59, 0.7); }
+  70% { box-shadow: 0 2px #bbb, 0 0 0 10px rgba(255, 235, 59, 0); }
+  100% { box-shadow: 0 2px #bbb, 0 0 0 0 rgba(255, 235, 59, 0); }
+}
+
+.key.space {
+  width: 200px;
+}
+
+/* Finger Guide (very basic) */
+.finger-guide-info {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #4b0082; /* Indigo */
+}

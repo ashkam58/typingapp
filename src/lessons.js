@@ -1,109 +1,221 @@
 // src/lessons.js
 export const lessons = [
-    {
-      id: 1,
-      title: "Home Row Basics: ASDF",
-      text: "asdf asdf asdf asdf",
-      targetKeys: ['a', 's', 'd', 'f'],
-      instructions: "Use your left hand fingers on A, S, D, F. Keep your fingers curved!"
-    },
-    {
-      id: 2,
-      title: "Home Row Basics: JKL;",
-      text: "jkl; jkl; jkl; jkl;",
-      targetKeys: ['j', 'k', 'l', ';'],
-      instructions: "Use your right hand fingers on J, K, L, ;. Try not to look down!"
-    },
-    {
-      id: 3,
-      title: "Home Row Combined",
-      text: "asdf jkl; fads ;lkj ask sad lad fall;",
-      targetKeys: ['a', 's', 'd', 'f', 'j', 'k', 'l', ';', ' '],
-      instructions: "Let's combine both hands on the home row. Remember the spacebar!"
-    },
-    {
-      id: 4,
-      title: "Adding E and I",
-      text: "feed Kiki like side life feed life Kiki like side",
-      targetKeys: ['a', 's', 'd', 'f', 'j', 'k', 'l', ';', 'e', 'i', ' '],
-      instructions: "Reach up for E with your left middle finger and I with your right middle finger."
-    },
-    {
-      id: 5,
-      title: "Top Row: QWERTY",
-      text: "we try yet wet rye tree true query tweet",
-      targetKeys: ['q', 'w', 'e', 'r', 't', 'y'],
-      instructions: "Top row time! Use your fingers to stretch up. Keep wrists steady."
-    },
-    {
-      id: 6,
-      title: "Top Row: UIOP",
-      text: "pop up out tip pit pit tip put it out",
-      targetKeys: ['u', 'i', 'o', 'p'],
-      instructions: "Stretch your right-hand fingers to reach U, I, O, P."
-    },
-    {
-      id: 7,
-      title: "Top Row Mixed Practice",
-      text: "quiet tip top quit ripe wire put type route",
-      targetKeys: ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p'],
-      instructions: "Full top row drill. Try to build rhythm without looking!"
-    },
-    {
-      id: 8,
-      title: "Bottom Row: ZXCV",
-      text: "zoo zip zap vex axe axe cave cave zip",
-      targetKeys: ['z', 'x', 'c', 'v'],
-      instructions: "Reach down with your left-hand fingers for Z, X, C, V."
-    },
-    {
-      id: 9,
-      title: "Bottom Row: BNM,. ",
-      text: "man bun ban nab mum bump lamp numb",
-      targetKeys: ['b', 'n', 'm', ',', '.', ' '],
-      instructions: "Use your right hand for B, N, M, and the punctuation keys."
-    },
-    {
-      id: 10,
-      title: "Bottom Row Mixed Practice",
-      text: "buzz cab van mix cob bam nap zip man",
-      targetKeys: ['z', 'x', 'c', 'v', 'b', 'n', 'm', ',', '.', ' '],
-      instructions: "Bottom row full practice with both hands!"
-    },
-    {
-      id: 11,
-      title: "Numbers Row",
-      text: "1234 5678 9012 3456 7890",
-      targetKeys: ['1','2','3','4','5','6','7','8','9','0'],
-      instructions: "Use shift + number row. Focus on control and accuracy."
-    },
-    {
-      id: 12,
-      title: "Common Words Practice",
-      text: "the and was you for with this that have from",
-      targetKeys: [...'abcdefghijklmnopqrstuvwxyz '],
-      instructions: "Type these common sight words for fluency and speed!"
-    },
-    {
-      id: 13,
-      title: "Capital Letters Practice",
-      text: "Alice Bob Charlie David Emily Frank Grace",
-      targetKeys: [...'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz '],
-      instructions: "Hold Shift to type capitals. Practice names with capital letters."
-    },
-    {
-      id: 14,
-      title: "Punctuation Practice",
-      text: "Hello! How are you? I'm fine, thanks.",
-      targetKeys: [...'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ ,.?!\''],
-      instructions: "Use Shift for punctuation marks like ! ? , and '. Keep posture steady!"
-    },
-    {
-      id: 15,
-      title: "Typing Sentences",
-      text: "My name is Aryan. I like to play and learn fast typing. I use all my fingers!",
-      targetKeys: [...'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ ,.?!\' '],
-      instructions: "Put it all together now. Focus on rhythm and smoothness."
-    }
+  {
+    id: 1,
+    title: "Tap A!",
+    text: "aaaa aaaa aaaa",
+    targetKeys: ['a'],
+    instructions: "Tap the A key using your left pinky!"
+  },
+  {
+    id: 2,
+    title: "Tap J!",
+    text: "jjjj jjjj jjjj",
+    targetKeys: ['j'],
+    instructions: "Use your right index finger to tap J!"
+  },
+  {
+    id: 3,
+    title: "Repeat S & K",
+    text: "ssss kkkk ssss kkkk",
+    targetKeys: ['s', 'k'],
+    instructions: "Use left ring finger for S, right middle finger for K!"
+  },
+  {
+    id: 4,
+    title: "Row Rockers: ASDF",
+    text: "asdf asdf asdf",
+    targetKeys: ['a', 's', 'd', 'f'],
+    instructions: "Left hand practice! Smooth and steady."
+  },
+  {
+    id: 5,
+    title: "JKL; Groove",
+    text: "jkl; jkl; jkl;",
+    targetKeys: ['j', 'k', 'l', ';'],
+    instructions: "Right hand time! Don't lift your wrists."
+  },
+  {
+    id: 6,
+    title: "Left Meets Right",
+    text: "asdf jkl; asdf jkl;",
+    targetKeys: ['a', 's', 'd', 'f', 'j', 'k', 'l', ';'],
+    instructions: "Practice both hands together now."
+  },
+  {
+    id: 7,
+    title: "Space Patrol",
+    text: "asd jkl asd jkl",
+    targetKeys: ['a', 's', 'd', 'j', 'k', 'l', ' '],
+    instructions: "Tap the spacebar with your thumbs."
+  },
+  {
+    id: 8,
+    title: "Mix Repeat",
+    text: "asd dsa jkl lkj",
+    targetKeys: ['a', 's', 'd', 'j', 'k', 'l'],
+    instructions: "Repeat mixed letters to build speed."
+  },
+  {
+    id: 9,
+    title: "Words in Home Row",
+    text: "dad sad lad fad",
+    targetKeys: ['a', 's', 'd', 'f', ' '],
+    instructions: "Easy real words. Say them as you type!"
+  },
+  {
+    id: 10,
+    title: "Name Game",
+    text: "jak jak jak jak",
+    targetKeys: ['j', 'a', 'k', ' '],
+    instructions: "Pretend it's a name! Tap each clearly."
+  },
+
+
+  {
+    id: 11,
+    title: "Silly Combos",
+    text: "saj kaf lak dak",
+    targetKeys: ['a', 's', 'd', 'f', 'j', 'k', 'l', ';'],
+    instructions: "Mix combos. Try without looking!"
+  },
+  {
+    id: 12,
+    title: "Tiny Sentences",
+    text: "Jak had a lad. Dad sat.",
+    targetKeys: ['a', 's', 'd', 'f', 'j', 'k', 'l', ';', ' '],
+    instructions: "Home row story mode!"
+  },
+  {
+    id: 13,
+    title: "Two-Hand Dance",
+    text: "fj fj fj jk as df",
+    targetKeys: ['a', 's', 'd', 'f', 'j', 'k'],
+    instructions: "Quick switches! Dance across the row."
+  },
+  {
+    id: 14,
+    title: "Echo Words",
+    text: "sad sad dad dad jak jak",
+    targetKeys: ['a', 's', 'd', 'j', 'k', ' '],
+    instructions: "Say the word aloud as you type."
+  },
+  {
+    id: 15,
+    title: "Happy Fingers",
+    text: "ask fjd lak sad jak ;lk",
+    targetKeys: ['a', 's', 'd', 'f', 'j', 'k', 'l', ';'],
+    instructions: "Keep your fingers happy and light!"
+  },
+  {
+    id: 16,
+    title: "Name Phrases",
+    text: "Jak had a flask. Kal sat.",
+    targetKeys: ['a', 's', 'd', 'f', 'j', 'k', 'l', ' '],
+    instructions: "Home row stories with names!"
+  },
+  {
+    id: 17,
+    title: "Catch the Combo",
+    text: "fj fj aj dj sj kj",
+    targetKeys: ['a', 's', 'd', 'j', 'k', 'f'],
+    instructions: "Speed up finger recognition."
+  },
+  {
+    id: 18,
+    title: "ABC Drill",
+    text: "as dk fj lk as dk",
+    targetKeys: ['a', 's', 'd', 'f', 'j', 'k', 'l'],
+    instructions: "Short combos. Repeat with a flow!"
+  },
+  {
+    id: 19,
+    title: "Kiddie Talk",
+    text: "dad fad lad jak jak kal",
+    targetKeys: ['a', 's', 'd', 'j', 'k', 'l'],
+    instructions: "Practice with silly words. Build memory!"
+  },
+  {
+    id: 20,
+    title: "Smooth Typing",
+    text: "asdf jkl; ;lkj fdsa",
+    targetKeys: ['a', 's', 'd', 'f', 'j', 'k', 'l', ';'],
+    instructions: "Forward then backward drill."
+  },
+  
+  
+
+  {
+    
+    id: 21,
+    title: "Fast Lanes",
+    text: "fj fj asd jkl asd jkl",
+    targetKeys: ['a', 's', 'd', 'j', 'k', 'l'],
+    instructions: "Type fast but stay accurate!"
+  },
+  {
+    id: 22,
+    title: "Finger Acrobatics",
+    text: "as fj dk ;l as fj",
+    targetKeys: ['a', 's', 'd', 'f', 'j', 'k', 'l', ';'],
+    instructions: "Jump between letters!"
+  },
+  {
+    id: 23,
+    title: "Reverse Drill",
+    text: "lkj fdsa lkj fdsa",
+    targetKeys: ['a', 's', 'd', 'f', 'j', 'k', 'l'],
+    instructions: "Type in reverse to improve control."
+  },
+  {
+    id: 24,
+    title: "Speed Sentence",
+    text: "Jak is a fast lad. Dad is glad.",
+    targetKeys: ['a', 's', 'd', 'f', 'j', 'k', 'l', ';', ' '],
+    instructions: "Real sentence. Speed + story!"
+  },
+  {
+    id: 25,
+    title: "Rhythm & Flow",
+    text: "asd fjl ask jak dkl",
+    targetKeys: ['a', 's', 'd', 'f', 'j', 'k', 'l'],
+    instructions: "Keep your typing flowing!"
+  },
+  {
+    id: 26,
+    title: "Funny Story",
+    text: "Jak had a sad lad. Dad sat by Kal.",
+    targetKeys: ['a', 's', 'd', 'f', 'j', 'k', 'l', ' '],
+    instructions: "Type like you're reading a cartoon line!"
+  },
+  {
+    id: 27,
+    title: "Mix & Repeat",
+    text: "df df jk jk as as ;l ;l",
+    targetKeys: ['a', 's', 'd', 'f', 'j', 'k', 'l', ';'],
+    instructions: "Mix it up, then repeat!"
+  },
+  {
+    id: 28,
+    title: "No Look Drill",
+    text: "ask jak sad kal jak ask",
+    targetKeys: ['a', 's', 'd', 'f', 'j', 'k', 'l'],
+    instructions: "Try not to look at the keyboard!"
+  },
+  {
+    id: 29,
+    title: "Final Challenge",
+    text: "asdf jkl; jak lad kal sad dad",
+    targetKeys: ['a', 's', 'd', 'f', 'j', 'k', 'l', ';'],
+    instructions: "Mix all tricks! Can you go without mistakes?"
+  },
+  {
+    id: 30,
+    title: "Typing Champion!",
+    text: "Jak likes typing fast. He is a champ!",
+    targetKeys: ['a', 's', 'd', 'f', 'j', 'k', 'l', ';', ' '],
+    instructions: "Victory drill! You're a home row hero now!"
+  }
+  
   ];
   
